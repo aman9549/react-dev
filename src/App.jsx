@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 import Service from "./pages/Service";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Hook5 from "./hooks/Hook5";
+import Todo from "./components/Todo";
 
 const App = () => {
   return (
@@ -24,7 +26,7 @@ const App = () => {
       {/* <ChildA message={"Helloooo"}  /> */}
       {/* <Hook4 /> */}
       {/* </Wrapper> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,7 +35,8 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="*" element={<Service />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Todo />
     </>
   );
 };
